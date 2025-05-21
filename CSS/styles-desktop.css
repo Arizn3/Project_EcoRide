@@ -1,0 +1,249 @@
+                                        /* grid container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+}
+                                        /* body */
+.body {
+    background-color: azure;
+}
+
+                                        /* header */
+.imgbg {
+    z-index: 1;
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+}
+.title {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    text-align: center;
+    padding: 1%;
+    margin: auto;
+    font-size: 7rem;
+    color: rgb(67, 217, 229);
+    text-shadow: rgb(0, 0, 207) 0px 0 10px;
+}
+.slogan {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    text-align: center;
+    font-style: italic;
+    padding: 1%;
+    margin: 10% 15% 1% 15%;
+    color: rgb(13, 13, 148);
+}
+.login {
+    font-family: monospace;
+    z-index: 3;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    position: relative;
+    top: 7em;
+    left: 65%;
+    width: 20%;
+    height: 10%;
+    background-color: blue;
+    color: white;
+    border-radius: 9px;
+    border: 1px solid;
+}
+.login:hover {
+    z-index: 3;
+    background-color: rgb(0, 157, 255);
+}
+.login:active {
+    z-index: 3;
+    background-color: rgb(0, 187, 255);
+}
+.inscription {
+    font-family: monospace;
+    z-index: 3;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    position: relative;
+    top: 10em;
+    left: 65%;
+    width: 20%;
+    height: 10%;
+    background-color: blue;
+    color: white;
+    border-radius: 9px;
+    border: 1px solid;
+}
+.inscription:hover {
+    z-index: 3;
+    background-color: rgb(0, 157, 255);
+}
+.inscription:active {
+    z-index: 3;
+    background-color: rgb(0, 187, 255);
+}
+                                        /* main bar */
+.main {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 1%;
+    margin: 5% 1% 5% 45%;
+    width: 50%;
+    height: 20%;
+    border: 1px solid;
+    border-radius: 10%;
+    background-color: white;
+    text-align: center;
+    font-family: monospace, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.result {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding: 1%;
+    margin: auto auto 10% 1%;
+    width: 15%;
+    height: 46%;
+    border: 1px solid #bebebe;;
+    border-radius: 50%;
+    background-color: white;
+    transition: rotate 2s;
+}
+.logoresult {
+    width: 80%;
+    height: 50%;
+}
+.result:hover {
+    background-color: rgb(180, 255, 255);
+    rotate: 360deg;
+}
+.result:focus {
+    background-color: rgb(180, 255, 255);
+    rotate: 360deg;
+}
+.result:active {
+    background-color: rgb(197, 244, 244);
+    border: 2px solid #bebebe;
+}
+                                        /*  article */
+.imgbg2 {
+    z-index: 1;
+    background-image: linear-gradient(to right, transparent, azure), url(/EcoRide/img/eleccar.png);
+    background-repeat: no-repeat;
+    grid-column: 1;
+    grid-row: 4/5;
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+    margin: 3%;
+}
+.imgbg2:hover {
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 4/5;
+    background-repeat: no-repeat;
+    width: 200%;
+    margin: 3%;
+}
+.article1 {
+    z-index: 2;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    background-color: white;
+    border-style: groove;
+    border-radius: 5%;
+    line-height: 150%;
+    font-size: 125%;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    text-align: center;
+    padding: 3%;
+    margin: 40% 15% 30% 30%;
+}
+.imgbg3 {
+    display: flex;
+    justify-self: right;
+    z-index: 1;
+    background-image: linear-gradient(to left, transparent, azure), url(/EcoRide/img/Planter.arbre.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+    margin: 3%;
+}
+.imgbg3:hover {
+    background-repeat: no-repeat;
+    z-index: 1;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    width: 200%;
+    margin: 3%;
+}
+.article2 {
+    z-index: 2;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    background-color: white;
+    border-style: groove;
+    border-radius: 5%;
+    line-height: 150%;
+    font-size: 125%;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    text-align: center;
+    padding: 3%;
+    margin: 40% 30% 40% 14%;
+}
+                                        /* footer */
+.footercolor {
+    background-color: white;
+    grid-column: 1/-1;
+    grid-row: 6;
+}
+hr {
+    grid-column: 1/-1;
+    grid-row: 5;
+    width: 100%;
+    margin: 10% 0% 0% 0%;
+}
+.mention {
+    grid-column: 1/2;
+    grid-row: 6;
+    text-align: center;
+    padding: 1%;
+}
+.colab {
+    grid-column: 2/3;
+    grid-row: 6;
+    text-align: center;
+    padding: 1%;
+    margin: 7% 20% 1% 20%;
+}
+.logo1 {
+    grid-column: 3/4;
+    grid-row: 6;
+    padding: 1%;
+    margin: 4% 10% 1% 40%;
+    width: 11%;
+    height: 45%;
+}
+.logo2 {
+    grid-column: 3/4;
+    grid-row: 6;
+    padding: 1%;
+    margin: 6% 20% 1% 21%;
+    width: 14%;
+    height: 40%;
+}
